@@ -1,6 +1,6 @@
 [project]
 name = "fzpcb"
-version = "0.0.1"
+version = "0.0.3"
 description = ''
 readme = "README.md"
 requires-python = ">=3.9"
@@ -27,3 +27,6 @@ Source = "https://github.com/Twirlip-of-the-Mists/fzpcb"
 
 [project.scripts]
 fzpcb = "fzpcb.fzpcb:cli"
+
+[tool.setuptools.package-data]
+fzpcb = ["*.yaml"]

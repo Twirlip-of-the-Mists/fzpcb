@@ -338,7 +338,7 @@ class CoordsTo:
         return result
     
     def transpose_only(self, coords):
-        print(self.ops)
+        # print(self.ops)
         result = coords.chain(self.ops)
         result = coords.__class__(abs(result[0]), abs(result[1]))
         # print('prel', coords, '->', coords * self.part_size, '->', result / self.scale)

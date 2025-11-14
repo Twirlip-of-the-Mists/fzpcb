@@ -232,9 +232,9 @@ class GridDrawing(svgwrite.Drawing, PCBShapeMixin):
                     shadow_vectors = [Vector(1,1), Vector(0,1), Vector(1,0)]
                     corner_vectors = [Vector(1,-1), Vector(-1,1)]
                     
-                print('offset', offset)
-                print('shadow_vectors', shadow_vectors)
-                print('corner_vectors', corner_vectors)
+                # print('offset', offset)
+                # print('shadow_vectors', shadow_vectors)
+                # print('corner_vectors', corner_vectors)
                 for v in corner_vectors:
                     expargs = c2.offset(offset*v).expand_args_list(args)
                     drawer(self, group, id_dict, fill[0], 'none',
